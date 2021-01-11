@@ -13,7 +13,7 @@ gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'bundler', '~> 2.1', '>= 2.1.4'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', '~> 11.1', '>= 11.1.3', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
@@ -28,8 +28,8 @@ end
 
 group :test do
   gem 'capybara', '>= 3.26'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
+  gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'
+  gem 'webdrivers', '~> 4.4', '>= 4.4.2'
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', '~> 1.2020', '>= 1.2020.6', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
